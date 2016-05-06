@@ -1,0 +1,30 @@
+{
+  "name": "validatejs-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-tsb": "^1.10.4",
+    "require-dir": "^0.3.0",
+    "typescript": "^1.8.10"
+  },
+  "scripts": {
+    "start": "npm i && jspm install && gulp watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "jspm": {
+    "dependencies": {
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1.2.0",
+      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.2.2",
+      "aurelia-validatejs": "npm:aurelia-validatejs@^0.2.1",
+      "bootstrap": "github:twbs/bootstrap@^3.3.6",
+      "font-awesome": "npm:font-awesome@^4.6.1"
+    },
+    "devDependencies": {}
+  }
+}

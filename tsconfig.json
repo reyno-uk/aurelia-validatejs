@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "rootDir": "src/",
+        "target": "es5",
+        "module": "amd",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true        
+    },
+    "filesGlob":[
+        "./jspm_packages/**/*d.ts",
+        "./typings/browser.d.ts",
+        "./typings_custom/*.d.ts"
+    ],
+    "exclude":[
+        "node_modules",
+        "typings/main",
+        "typings/main.d.ts"
+    ]
+}

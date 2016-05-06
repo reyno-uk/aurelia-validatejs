@@ -1,0 +1,22 @@
+<template>
+    <require from="bootstrap/css/bootstrap.min.css"></require>
+    
+    <div class="container">
+    <h1>Aurelia Validate-Js with TypeScript</h1>
+    
+  <form class="container">
+    <ul class="list-unstyled">
+      <li repeat.for="error of errors">
+        <span class="text-danger">${error.message}</span>
+      </li>
+    </ul>
+    <div>
+      <label class="form-group">
+        <strong>First Name</strong>
+        <input class="form-control" value.bind="model.firstName & validate" />
+      </label>
+    </div>
+     <button click.trigger="submit()" class="btn btn-default">Submit</button>
+  </form>
+    </div>
+</template>
